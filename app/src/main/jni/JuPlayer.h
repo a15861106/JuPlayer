@@ -1,5 +1,5 @@
 //
-// Created by erwin on 8/25/2015.
+// Created by Juwan on 8/25/2015.
 //
 
 #ifndef JUPLAYER_JUPLAYER_H

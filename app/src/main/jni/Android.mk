@@ -6,6 +6,8 @@ MY_ALL_DIRS := $(LOCAL_PATH)/ \
 
 LOCAL_MODULE    := JuPlayer
 LOCAL_SRC_FILES := JuPlayer.cpp \
+Decoder.cpp \
+H264Decoder.cpp \
 
 LOCAL_C_INCLUDES := $(MY_ALL_DIRS)
 LOCAL_LDLIBS :=  -llog -ljnigraphics -lz -landroid
