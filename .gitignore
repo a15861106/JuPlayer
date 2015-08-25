@@ -1,0 +1,10 @@
+.gradle
+JuPlayer.iml
+app/app.iml
+app/proguard-rules.pro
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+.idea/

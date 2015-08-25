@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.juwan.juplayer"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        sourceSets.main {
+            jni.srcDirs = [] //disable automatic ndk-build call
+            jniLibs.srcDir "src/main/libs"
+        }
+
+        ndk {
+            moduleName "JuPlayer"
+            ldLibs "log", "jnigraphics", "z", "android"
+            // abiFilters "armeabi"
+        }
+    }
+    // 由于手动添加了jniLibs.srcDir "src/main/libs"，避免编译报重复的错误信息
+    packagingOptions {
+        exclude 'lib/armeabi/libJuPlayer.so'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}
