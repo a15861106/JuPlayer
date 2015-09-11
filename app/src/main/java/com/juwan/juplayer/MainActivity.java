@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((TextView) findViewById(R.id.hello)).setText(new Ffmpeg().init());
+        ((TextView) findViewById(R.id.hello)).setText("avcodec_version = " + new Ffmpeg().init());
     }
 
     @Override
