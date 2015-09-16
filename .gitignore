@@ -1,3 +1,6 @@
+# some temp file in ndk-build
+app/src/main/obj
+app/src/main/libs
 .gradle
 JuPlayer.iml
 app/app.iml

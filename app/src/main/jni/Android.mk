@@ -17,4 +17,4 @@ APP_OPTIM := debug
 
 include $(BUILD_SHARED_LIBRARY)
 
-$(call import-module, ffmpeg-2.5/android/arm)
+$(call import-module, ffmpeg-2.8/android/arm)

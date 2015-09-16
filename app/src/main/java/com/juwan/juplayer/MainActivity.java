@@ -12,11 +12,11 @@ public class MainActivity extends AppCompatActivity {
 
     static {
         // load FFmpeg library
-        System.loadLibrary("avutil-54");
-        System.loadLibrary("swresample-1");
-        System.loadLibrary("avcodec-56");
-        System.loadLibrary("avformat-56");
-        System.loadLibrary("swscale-3");
+        System.loadLibrary("avutil-55");
+        System.loadLibrary("swresample-2");
+        System.loadLibrary("avcodec-57");
+        System.loadLibrary("avformat-57");
+        System.loadLibrary("swscale-4");
 
         System.loadLibrary("JuPlayer");
     }
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((TextView) findViewById(R.id.hello)).setText(new Ffmpeg().init());
+        ((TextView) findViewById(R.id.hello)).setText("avcodec_version = " + new Ffmpeg().init());
     }
 
     @Override
