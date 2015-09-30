@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">JuPlayer</string>
 
+    <!-- activity_main.xml -->
+    <string name="tv_h264_decode">H264 decode</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 </resources>

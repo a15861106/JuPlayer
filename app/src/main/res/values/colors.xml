@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Orange">#ff5722</color>
+    <color name="DeepPurple">#673AB7</color>
+    <color name="DeepPurple900">#311B92</color>
+    <color name="White">#fff</color>
+    <color name="Dark">#000</color>
+    <color name="Gray">#888888</color>
+    <color name="DarkBule">#3F51B5</color>
+</resources>
